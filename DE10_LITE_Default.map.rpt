@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_LITE_Default
-Fri Jul 03 16:04:44 2020
+Fri Jul 17 15:00:51 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -18,12 +18,15 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: ClkGen:CG0
- 13. Port Connectivity Checks: "UpDownCounter:UDC"
- 14. Port Connectivity Checks: "MIPSnp:MIPSnp0"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+ 13. Port Connectivity Checks: "UpDownCounter:UDC4"
+ 14. Port Connectivity Checks: "UpDownCounter:UDC3"
+ 15. Port Connectivity Checks: "UpDownCounter:UDC2"
+ 16. Port Connectivity Checks: "UpDownCounter:UDC1"
+ 17. Port Connectivity Checks: "MIPSnp:MIPSnp0"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -49,15 +52,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 03 16:04:44 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 17 15:00:51 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE_Default                           ;
 ; Top-level Entity Name              ; DE10_LITE_Default                           ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4,367                                       ;
-;     Total combinational functions  ; 2,222                                       ;
-;     Dedicated logic registers      ; 2,312                                       ;
-; Total registers                    ; 2312                                        ;
+; Total logic elements               ; 4,385                                       ;
+;     Total combinational functions  ; 2,240                                       ;
+;     Dedicated logic registers      ; 2,328                                       ;
+; Total registers                    ; 2328                                        ;
 ; Total pins                         ; 185                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -196,20 +199,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 4,367 ;
+; Estimated Total logic elements              ; 4,385 ;
 ;                                             ;       ;
-; Total combinational functions               ; 2222  ;
+; Total combinational functions               ; 2240  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 1852  ;
-;     -- 3 input functions                    ; 170   ;
-;     -- <=2 input functions                  ; 200   ;
+;     -- 4 input functions                    ; 1854  ;
+;     -- 3 input functions                    ; 183   ;
+;     -- <=2 input functions                  ; 203   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2069  ;
+;     -- normal mode                          ; 2087  ;
 ;     -- arithmetic mode                      ; 153   ;
 ;                                             ;       ;
-; Total registers                             ; 2312  ;
-;     -- Dedicated logic registers            ; 2312  ;
+; Total registers                             ; 2328  ;
+;     -- Dedicated logic registers            ; 2328  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 185   ;
@@ -217,8 +220,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 2241  ;
-; Total fan-out                               ; 15750 ;
+; Maximum fan-out                             ; 2256  ;
+; Total fan-out                               ; 15857 ;
 ; Average fan-out                             ; 3.17  ;
 +---------------------------------------------+-------+
 
@@ -228,10 +231,10 @@ refer to the applicable agreement for further details.
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name       ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------------+--------------+
-; |DE10_LITE_Default          ; 2222 (26)           ; 2312 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 185  ; 0            ; 0          ; |DE10_LITE_Default                         ; DE10_LITE_Default ; work         ;
+; |DE10_LITE_Default          ; 2240 (29)           ; 2328 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 185  ; 0            ; 0          ; |DE10_LITE_Default                         ; DE10_LITE_Default ; work         ;
 ;    |Chattering:Chattering1| ; 16 (16)             ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|Chattering:Chattering1  ; Chattering        ; work         ;
 ;    |ClkGen:CG0|             ; 76 (76)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|ClkGen:CG0              ; ClkGen            ; work         ;
-;    |MIPSnp:MIPSnp0|         ; 2028 (247)          ; 2240 (32)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0          ; MIPSnp            ; work         ;
+;    |MIPSnp:MIPSnp0|         ; 2024 (243)          ; 2240 (32)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0          ; MIPSnp            ; work         ;
 ;       |ALU:ALUi|            ; 72 (72)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|ALU:ALUi ; ALU               ; work         ;
 ;       |DM:DMi|              ; 1428 (1428)         ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|DM:DMi   ; DM                ; work         ;
 ;       |IM:IMi|              ; 22 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|IM:IMi   ; IM                ; work         ;
@@ -245,6 +248,10 @@ refer to the applicable agreement for further details.
 ;    |SegmentDecoder:HSD4|    ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD4     ; SegmentDecoder    ; work         ;
 ;    |SegmentDecoder:HSD5|    ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD5     ; SegmentDecoder    ; work         ;
 ;    |TogleFF:KEY1SW|         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|TogleFF:KEY1SW          ; TogleFF           ; work         ;
+;    |UpDownCounter:UDC1|     ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC1      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC2|     ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC2      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC3|     ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC3      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC4|     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC4      ; UpDownCounter     ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -270,24 +277,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; MIPSnp:MIPSnp0|regD[13]                             ; Mux12                ; yes                    ;
 ; MIPSnp:MIPSnp0|regD[14]                             ; Mux12                ; yes                    ;
 ; MIPSnp:MIPSnp0|regD[15]                             ; Mux12                ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[0]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[1]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[2]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[3]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[4]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[5]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[6]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[7]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[8]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[9]                     ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[10]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[11]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[12]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[13]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[14]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; MIPSnp:MIPSnp0|RF:RFi|RegOut[15]                    ; MIPSnp:MIPSnp0|Mux47 ; yes                    ;
-; clk                                                 ; SW[6]                ; yes                    ;
-; Number of user-specified and inferred latches = 33  ;                      ;                        ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[0]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[1]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[2]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[3]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[4]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[5]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[6]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[7]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[8]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[9]                     ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[10]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[11]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[12]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[13]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[14]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; MIPSnp:MIPSnp0|RF:RFi|RegOut[15]                    ; MIPSnp:MIPSnp0|Mux46 ; yes                    ;
+; Number of user-specified and inferred latches = 32  ;                      ;                        ;
 +-----------------------------------------------------+----------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -299,8 +305,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+----------------------------------------+
 ; MIPSnp:MIPSnp0|RF:RFi|r30[0..31]       ; Stuck at GND due to stuck port data_in ;
 ; MIPSnp:MIPSnp0|RF:RFi|r28[0..31]       ; Stuck at GND due to stuck port data_in ;
-; UpDownCounter:UDC|c[0..3]              ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 68 ;                                        ;
+; Total Number of Removed Registers = 64 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -309,12 +314,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2312  ;
+; Total registers                              ; 2328  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 242   ;
+; Number of registers using Asynchronous Clear ; 258   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2259  ;
+; Number of registers using Clock Enable       ; 2271  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -325,23 +330,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r1[27]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r3[16]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r29[31] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |DE10_LITE_Default|UpDownCounter:UDC|c[3]        ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[0]          ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[31]         ;
-; 8:1                ; 22 bits   ; 110 LEs       ; 44 LEs               ; 66 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[5]          ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r2[15]  ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r31[31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r3[9]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r29[23] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 2 LEs                ; 8 LEs                  ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[1]          ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[28]         ;
+; 8:1                ; 22 bits   ; 110 LEs       ; 44 LEs               ; 66 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|pc[19]         ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r2[8]   ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 0 LEs                ; 96 LEs                 ; Yes        ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|r31[0]  ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|Mux40          ;
-; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|Mux47          ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|Mux46          ;
 ; 7:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|Mux43          ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|Mux448  ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|rB[12]  ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|Mux527  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|rB[3]   ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|ALU:ALUi|Add0  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|MP:MPi|MPC[12] ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 128 LEs              ; 64 LEs                 ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|rA[5]   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|rC[2]          ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 128 LEs              ; 64 LEs                 ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi|rA[19]  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |DE10_LITE_Default|MIPSnp:MIPSnp0|rC[12]         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
@@ -355,13 +359,49 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "UpDownCounter:UDC" ;
-+------+-------+----------+---------------------+
-; Port ; Type  ; Severity ; Details             ;
-+------+-------+----------+---------------------+
-; ud   ; Input ; Info     ; Stuck at GND        ;
-+------+-------+----------+---------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UpDownCounter:UDC4"                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ud   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; set  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cb   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "UpDownCounter:UDC3" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ud   ; Input ; Info     ; Stuck at GND         ;
+; set  ; Input ; Info     ; Stuck at GND         ;
+; cin  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "UpDownCounter:UDC2" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ud   ; Input ; Info     ; Stuck at GND         ;
+; set  ; Input ; Info     ; Stuck at GND         ;
+; cin  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "UpDownCounter:UDC1" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; ud   ; Input ; Info     ; Stuck at GND         ;
+; set  ; Input ; Info     ; Stuck at GND         ;
+; cin  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -379,25 +419,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 185                         ;
-; cycloneiii_ff         ; 2312                        ;
-;     CLR               ; 50                          ;
+; cycloneiii_ff         ; 2328                        ;
+;     CLR               ; 54                          ;
 ;     ENA               ; 2067                        ;
-;     ENA CLR           ; 192                         ;
+;     ENA CLR           ; 204                         ;
 ;     plain             ; 3                           ;
 ; cycloneiii_io_obuf    ; 71                          ;
-; cycloneiii_lcell_comb ; 2229                        ;
+; cycloneiii_lcell_comb ; 2247                        ;
 ;     arith             ; 153                         ;
 ;         2 data inputs ; 91                          ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 2076                        ;
+;     normal            ; 2094                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 103                         ;
-;         3 data inputs ; 108                         ;
-;         4 data inputs ; 1852                        ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 102                         ;
+;         3 data inputs ; 121                         ;
+;         4 data inputs ; 1854                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.90                       ;
-; Average LUT depth     ; 9.39                        ;
+; Max LUT depth         ; 15.70                       ;
+; Average LUT depth     ; 9.28                        ;
 +-----------------------+-----------------------------+
 
 
@@ -406,7 +446,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -416,7 +456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Jul 03 16:04:28 2020
+    Info: Processing started: Fri Jul 17 15:00:30 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_LITE_Default -c DE10_LITE_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -446,13 +486,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
     Info (12023): Found entity 1: ALU File: C:/DE10_LITE_Default/alu.vhd Line: 7
 Info (12021): Found 8 design units, including 4 entities, in source file de10_lite_default.vhd
     Info (12022): Found design unit 1: DE10_LITE_Default-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 59
-    Info (12022): Found design unit 2: ClkGen-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 255
-    Info (12022): Found design unit 3: UpDownCounter-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 292
-    Info (12022): Found design unit 4: SegmentDecoder-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 340
+    Info (12022): Found design unit 2: ClkGen-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 261
+    Info (12022): Found design unit 3: UpDownCounter-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 298
+    Info (12022): Found design unit 4: SegmentDecoder-RTL File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 346
     Info (12023): Found entity 1: DE10_LITE_Default File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 8
-    Info (12023): Found entity 2: ClkGen File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 247
-    Info (12023): Found entity 3: UpDownCounter File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 282
-    Info (12023): Found entity 4: SegmentDecoder File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 333
+    Info (12023): Found entity 2: ClkGen File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 253
+    Info (12023): Found entity 3: UpDownCounter File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 288
+    Info (12023): Found entity 4: SegmentDecoder File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 339
 Info (12021): Found 1 design units, including 1 entities, in source file v/spi_ee_config.v
     Info (12023): Found entity 1: spi_ee_config File: C:/DE10_LITE_Default/v/spi_ee_config.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/spi_controller.v
@@ -492,19 +532,22 @@ Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(43): u
 Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(44): used implicit default value for signal "VGA_VS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 44
 Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(47): used implicit default value for signal "GSENSOR_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 47
 Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(48): used implicit default value for signal "GSENSOR_SCLK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 48
-Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(120): used implicit default value for signal "SET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 120
-Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(121): used implicit default value for signal "Cin" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 121
-Warning (10036): Verilog HDL or VHDL warning at DE10_LITE_Default.vhd(124): object "clkin" assigned a value but never read File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 124
-Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(147): signal "SW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 147
+Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(122): used implicit default value for signal "Count" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 122
+Warning (10541): VHDL Signal Declaration warning at DE10_LITE_Default.vhd(124): used implicit default value for signal "CB0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 124
+Warning (10036): Verilog HDL or VHDL warning at DE10_LITE_Default.vhd(124): object "CB4" assigned a value but never read File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 124
+Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(148): signal "SW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 148
 Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(149): signal "PC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 149
-Warning (10631): VHDL Process Statement warning at DE10_LITE_Default.vhd(144): inferring latch(es) for signal or variable "clk", which holds its previous value in one or more paths through the process File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 144
-Info (10041): Inferred latch for "clk" at DE10_LITE_Default.vhd(144) File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 144
-Info (12128): Elaborating entity "Chattering" for hierarchy "Chattering:Chattering1" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 132
-Info (12128): Elaborating entity "TogleFF" for hierarchy "TogleFF:KEY1SW" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 133
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:RD0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 137
+Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(196): signal "Count4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 196
+Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(196): signal "Count3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 196
+Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(196): signal "Count2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 196
+Warning (10492): VHDL Process Statement warning at DE10_LITE_Default.vhd(196): signal "Count1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 196
+Warning (10873): Using initial value X (don't care) for net "LEDR[6]" at DE10_LITE_Default.vhd(36) File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 36
+Info (12128): Elaborating entity "Chattering" for hierarchy "Chattering:Chattering1" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 133
+Info (12128): Elaborating entity "TogleFF" for hierarchy "TogleFF:KEY1SW" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 134
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:RD0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 138
 Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/DE10_LITE_Default/v/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "ClkGen" for hierarchy "ClkGen:CG0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 143
-Info (12128): Elaborating entity "MIPSnp" for hierarchy "MIPSnp:MIPSnp0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 163
+Info (12128): Elaborating entity "ClkGen" for hierarchy "ClkGen:CG0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 144
+Info (12128): Elaborating entity "MIPSnp" for hierarchy "MIPSnp:MIPSnp0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 166
 Warning (10631): VHDL Process Statement warning at mipsnp.vhd(184): inferring latch(es) for signal or variable "regD", which holds its previous value in one or more paths through the process File: C:/DE10_LITE_Default/mipsnp.vhd Line: 184
 Info (10041): Inferred latch for "regD[0]" at mipsnp.vhd(184) File: C:/DE10_LITE_Default/mipsnp.vhd Line: 184
 Info (10041): Inferred latch for "regD[1]" at mipsnp.vhd(184) File: C:/DE10_LITE_Default/mipsnp.vhd Line: 184
@@ -546,8 +589,10 @@ Info (10041): Inferred latch for "RegOut[14]" at rf.vhd(38) File: C:/DE10_LITE_D
 Info (10041): Inferred latch for "RegOut[15]" at rf.vhd(38) File: C:/DE10_LITE_Default/rf.vhd Line: 38
 Info (12128): Elaborating entity "ALU" for hierarchy "MIPSnp:MIPSnp0|ALU:ALUi" File: C:/DE10_LITE_Default/mipsnp.vhd Line: 166
 Info (12128): Elaborating entity "DM" for hierarchy "MIPSnp:MIPSnp0|DM:DMi" File: C:/DE10_LITE_Default/mipsnp.vhd Line: 173
-Info (12128): Elaborating entity "UpDownCounter" for hierarchy "UpDownCounter:UDC" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 181
-Info (12128): Elaborating entity "SegmentDecoder" for hierarchy "SegmentDecoder:HSD0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 205
+Info (12128): Elaborating entity "UpDownCounter" for hierarchy "UpDownCounter:UDC1" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 185
+Info (12128): Elaborating entity "SegmentDecoder" for hierarchy "SegmentDecoder:HSD0" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 211
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer clk File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 117
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "MIPSnp:MIPSnp0|DM:DMi|DataMemory" is uninferred due to asynchronous read logic File: C:/DE10_LITE_Default/dm.vhd Line: 19
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -711,6 +756,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 23
     Warning (13410): Pin "DRAM_UDQM" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 24
     Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 25
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 36
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 36
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 36
     Warning (13410): Pin "VGA_B[0]" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 40
     Warning (13410): Pin "VGA_B[1]" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 40
@@ -730,8 +777,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "GSENSOR_SCLK" is stuck at GND File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 48
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register ClkGen:CG0|i[31] will power up to Low File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 261
-    Critical Warning (18010): Register ClkGen:CG0|i[0] will power up to Low File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 261
+    Critical Warning (18010): Register ClkGen:CG0|i[31] will power up to Low File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 267
+    Critical Warning (18010): Register ClkGen:CG0|i[0] will power up to Low File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 267
 Info (144001): Generated suppressed messages file C:/DE10_LITE_Default/DE10_LITE_Default.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -740,16 +787,16 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "MAX10_CLK2_50" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 13
     Warning (15610): No output dependent on input pin "GSENSOR_INT[1]" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 46
     Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 46
-Info (21057): Implemented 4617 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4635 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 97 output pins
     Info (21060): Implemented 71 bidirectional pins
-    Info (21061): Implemented 4432 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 216 warnings
+    Info (21061): Implemented 4450 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 224 warnings
     Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Fri Jul 03 16:04:44 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Processing ended: Fri Jul 17 15:00:51 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+

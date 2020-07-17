@@ -89,7 +89,7 @@ end component;
 component MIPSnp is
     port(
         CLK, RESET : in std_logic;
-		  EN : in std_logic;							   --Enavle
+		  EN : in std_logic; --Enavle
 		  RegN : in std_logic_vector(2 downto 0); --Reg number
         PCout : out std_logic_vector(7 downto 0);
 		  regD : out std_logic_vector(15 downto 0) -- Reg Data
@@ -119,7 +119,8 @@ signal PC : std_logic_vector(7 downto 0);
 signal EN, EN0, EN1, EN2, EN3, EN4, EN5 : std_logic;  -- Enable
 signal UD, SET : std_logic;  -- Up/Down, Set
 signal Cin : std_logic_vector(3 downto 0);  -- Counter In
-signal Cout0, Cout1, Cout2, Cout3, Cout4, Cout5, Count : std_logic_vector(3 downto 0);  -- Counter Out
+signal Cout0, Cout1, Cout2, Cout3, Cout4, Cout5, Count : std_logic_vector(3 downto 0);  -- regD In
+signal Count0, Count1, Count2, Count3, Count4, Count5 : std_logic_vector(3 downto 0);  -- Counter Out
 signal CB0, CB1, CB2, CB3, CB4, CB5 : std_logic;  -- Carry/Borrow
 signal key1out, Ststout, clkin : std_logic;
 signal Breakaddr : std_logic_vector(5 downto 0);
@@ -145,9 +146,11 @@ CG0: ClkGen generic map (25000000) port map (MAX10_CLK1_50, reset, clk1);
 	
 	begin
 		if(SW(6) = '1') then
-			clkin <= '1';
-		elsif(PC(5 downto 0) = Breakaddr and Breakaddr /= "000000") then
-			clk <= '1';
+			if(PC(5 downto 0) = Breakaddr and Breakaddr /= "000000") then
+				clk <= '1';
+			else
+				clk <= clk1;
+			end if;
 		else
 			clk <= clk1;
 		end if;
@@ -162,8 +165,8 @@ CG0: ClkGen generic map (25000000) port map (MAX10_CLK1_50, reset, clk1);
 -- MIPS Non Pipeline	(Assignments>Settings>Files Add Components)
 MIPSnp0: MIPSnp port map (clk, reset, EN, RegNin, PC, regD);
 
-	LEDR(7 downto 0) <= PC;
-	LEDR(8) <= KEY(1);	
+	LEDR(5 downto 0) <= PC(7 downto 2);
+	LEDR(8) <= EN;	
 	
 -- Signal of Up/Down Counter	--EN0 <= Ststout;  -- Enable=1(Up/Down)
 --	EN1 <= CB0;  -- 9
@@ -172,22 +175,25 @@ MIPSnp0: MIPSnp port map (clk, reset, EN, RegNin, PC, regD);
 --	EN4 <= CB3 and EN3;  -- 9999
 --	EN5 <= CB4 and EN4;  -- 99999
 --	UD <= SW(9);  -- Up/Down=0/1
---	SET <= SW(8) ;  -- Set Initial Value=1
---	Cin <= SW(3 downto 0);  -- Countet In
+	SET <= '0' ;  -- Set Initial Value=1
+	Cin <= "0000";  -- Countet In
 	LEDR(9) <= CB0;  -- LED Display Carry/Borrow
 	UD <= '0';
 
 -- Up/Down Counter 0 to 999999
-UDC: UpDownCounter port map (clk, reset, EN, UD, SET, cin, Count, CB0);
--- UDC1: UpDownCounter port map (clk, reset, EN1, UD, SET, Cin, Cout1, CB1);
--- UDC2: UpDownCounter port map (clk, reset, EN2, UD, SET, Cin, Cout2, CB2);
--- UDC3: UpDownCounter port map (clk, reset, EN3, UD, SET, Cin, Cout3, CB3);
--- UDC4: UpDownCounter port map (clk, reset, EN4, UD, SET, Cin, Cout4, CB4);
+LEDR(7) <= Count(0);
+UDC1: UpDownCounter port map (clk, reset, EN, UD, SET, Cin, Count1, CB1);
+EN2 <= CB1 and EN;
+UDC2: UpDownCounter port map (clk, reset, EN2, UD, SET, Cin, Count2, CB2);
+EN3 <= CB2 and EN2;
+UDC3: UpDownCounter port map (clk, reset, EN3, UD, SET, Cin, Count3, CB3);
+EN4 <= CB3 and EN3;
+UDC4: UpDownCounter port map (clk, reset, EN4, UD, SET, Cin, Count4, CB4);
 -- UDC5: UpDownCounter port map (clk, reset, EN5, UD, SET, Cin, Cout5, CB5);
 ReO : process(RegNin, Count, RegD)
 	 begin
 		case (RegNin) is
-			when "000" => RegDout <= "000000000000" & Count(3 downto 0);
+			when "000" => RegDout <= Count4 & Count3 & Count2 & Count1;
 			when others => RegDout <= regD;
 		end case;
 	end process;

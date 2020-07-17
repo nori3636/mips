@@ -220,14 +220,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[7]",
-					"strict" : false
-				},
-				{
 					"name" : "LEDR[8]",
 					"strict" : false
 				},
@@ -241,10 +233,6 @@
 				},
 				{
 					"name" : "SW[8]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[1]",
 					"strict" : false
 				},
 				{
@@ -281,6 +269,10 @@
 				},
 				{
 					"name" : "MAX10_CLK1_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
 					"strict" : false
 				}
 			]

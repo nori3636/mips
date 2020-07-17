@@ -1,5 +1,5 @@
 Fitter report for DE10_LITE_Default
-Fri Jul 03 16:05:03 2020
+Fri Jul 17 15:01:17 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -68,17 +68,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jul 03 16:05:03 2020       ;
+; Fitter Status                      ; Successful - Fri Jul 17 15:01:17 2020       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; DE10_LITE_Default                           ;
 ; Top-level Entity Name              ; DE10_LITE_Default                           ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,239 / 49,760 ( 7 % )                      ;
-;     Total combinational functions  ; 2,223 / 49,760 ( 4 % )                      ;
-;     Dedicated logic registers      ; 2,312 / 49,760 ( 5 % )                      ;
-; Total registers                    ; 2312                                        ;
+; Total logic elements               ; 3,259 / 49,760 ( 7 % )                      ;
+;     Total combinational functions  ; 2,241 / 49,760 ( 5 % )                      ;
+;     Dedicated logic registers      ; 2,328 / 49,760 ( 5 % )                      ;
+; Total registers                    ; 2328                                        ;
 ; Total pins                         ; 185 / 360 ( 51 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -155,14 +155,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.36        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  12.0%      ;
-;     Processor 3            ;  12.0%      ;
-;     Processor 4            ;  11.9%      ;
+;     Processor 2            ;  14.7%      ;
+;     Processor 3            ;  14.7%      ;
+;     Processor 4            ;  14.7%      ;
 +----------------------------+-------------+
 
 
@@ -172,8 +172,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 5000 ) ; 0.00 % ( 0 / 5000 )        ; 0.00 % ( 0 / 5000 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 5000 ) ; 0.00 % ( 0 / 5000 )        ; 0.00 % ( 0 / 5000 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 5034 ) ; 0.00 % ( 0 / 5034 )        ; 0.00 % ( 0 / 5034 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 5034 ) ; 0.00 % ( 0 / 5034 )        ; 0.00 % ( 0 / 5034 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4984 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 5018 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -212,26 +212,26 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 3,239 / 49,760 ( 7 % ) ;
-;     -- Combinational with no register       ; 927                    ;
-;     -- Register only                        ; 1016                   ;
-;     -- Combinational with a register        ; 1296                   ;
+; Total logic elements                        ; 3,259 / 49,760 ( 7 % ) ;
+;     -- Combinational with no register       ; 931                    ;
+;     -- Register only                        ; 1018                   ;
+;     -- Combinational with a register        ; 1310                   ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 1852                   ;
-;     -- 3 input functions                    ; 170                    ;
-;     -- <=2 input functions                  ; 201                    ;
-;     -- Register only                        ; 1016                   ;
+;     -- 4 input functions                    ; 1854                   ;
+;     -- 3 input functions                    ; 183                    ;
+;     -- <=2 input functions                  ; 204                    ;
+;     -- Register only                        ; 1018                   ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 2070                   ;
+;     -- normal mode                          ; 2088                   ;
 ;     -- arithmetic mode                      ; 153                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 2,312 / 51,509 ( 4 % ) ;
-;     -- Dedicated logic registers            ; 2,312 / 49,760 ( 5 % ) ;
+; Total registers*                            ; 2,328 / 51,509 ( 5 % ) ;
+;     -- Dedicated logic registers            ; 2,328 / 49,760 ( 5 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 266 / 3,110 ( 9 % )    ;
+; Total LABs:  partially or completely used   ; 256 / 3,110 ( 8 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 185 / 360 ( 51 % )     ;
 ;     -- Clock pins                           ; 4 / 8 ( 50 % )         ;
@@ -251,12 +251,12 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 2.6% / 2.4% / 2.8%     ;
-; Peak interconnect usage (total/H/V)         ; 30.8% / 29.3% / 32.8%  ;
-; Maximum fan-out                             ; 2240                   ;
+; Average interconnect usage (total/H/V)      ; 2.7% / 2.4% / 3.1%     ;
+; Peak interconnect usage (total/H/V)         ; 28.5% / 26.7% / 31.0%  ;
+; Maximum fan-out                             ; 2256                   ;
 ; Highest non-global fan-out                  ; 385                    ;
-; Total fan-out                               ; 16099                  ;
-; Average fan-out                             ; 3.02                   ;
+; Total fan-out                               ; 16129                  ;
+; Average fan-out                             ; 3.05                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -269,26 +269,26 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 3239 / 49760 ( 7 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 927                  ; 0                              ;
-;     -- Register only                        ; 1016                 ; 0                              ;
-;     -- Combinational with a register        ; 1296                 ; 0                              ;
+; Total logic elements                        ; 3259 / 49760 ( 7 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 931                  ; 0                              ;
+;     -- Register only                        ; 1018                 ; 0                              ;
+;     -- Combinational with a register        ; 1310                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1852                 ; 0                              ;
-;     -- 3 input functions                    ; 170                  ; 0                              ;
-;     -- <=2 input functions                  ; 201                  ; 0                              ;
-;     -- Register only                        ; 1016                 ; 0                              ;
+;     -- 4 input functions                    ; 1854                 ; 0                              ;
+;     -- 3 input functions                    ; 183                  ; 0                              ;
+;     -- <=2 input functions                  ; 204                  ; 0                              ;
+;     -- Register only                        ; 1018                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2070                 ; 0                              ;
+;     -- normal mode                          ; 2088                 ; 0                              ;
 ;     -- arithmetic mode                      ; 153                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 2312                 ; 0                              ;
-;     -- Dedicated logic registers            ; 2312 / 49760 ( 5 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 2328                 ; 0                              ;
+;     -- Dedicated logic registers            ; 2328 / 49760 ( 5 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 266 / 3110 ( 9 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 256 / 3110 ( 8 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 185                  ; 0                              ;
@@ -306,8 +306,8 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 16105                ; 8                              ;
-;     -- Registered Connections               ; 2732                 ; 0                              ;
+;     -- Total Connections                    ; 16135                ; 8                              ;
+;     -- Registered Connections               ; 2814                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 142                  ; 0                              ;
@@ -343,7 +343,7 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 ; GSENSOR_INT[1] ; Y14   ; 4        ; 51           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; GSENSOR_INT[2] ; Y13   ; 4        ; 51           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; KEY[0]         ; B8    ; 7        ; 46           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
-; KEY[1]         ; A7    ; 7        ; 49           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; KEY[1]         ; A7    ; 7        ; 49           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 ; MAX10_CLK1_50  ; P11   ; 3        ; 34           ; 0            ; 28           ; 70                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; MAX10_CLK2_50  ; N14   ; 6        ; 78           ; 29           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[0]          ; C10   ; 7        ; 51           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
@@ -353,9 +353,9 @@ The pin-out file can be found in C:/DE10_LITE_Default/DE10_LITE_Default.pin.
 ; SW[4]          ; A12   ; 7        ; 54           ; 54           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[5]          ; B12   ; 7        ; 49           ; 54           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[6]          ; A13   ; 7        ; 54           ; 54           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[7]          ; A14   ; 7        ; 58           ; 54           ; 28           ; 45                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[8]          ; B14   ; 7        ; 56           ; 54           ; 0            ; 31                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; SW[9]          ; F15   ; 7        ; 69           ; 54           ; 0            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[7]          ; A14   ; 7        ; 58           ; 54           ; 28           ; 29                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[8]          ; B14   ; 7        ; 56           ; 54           ; 0            ; 15                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; SW[9]          ; F15   ; 7        ; 69           ; 54           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 
 
@@ -1250,15 +1250,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                        ; Entity Name       ; Library Name ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------+--------------+
-; |DE10_LITE_Default          ; 3239 (27)   ; 2312 (0)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 927 (27)     ; 1016 (0)          ; 1296 (0)         ; 0          ; |DE10_LITE_Default                         ; DE10_LITE_Default ; work         ;
+; |DE10_LITE_Default          ; 3259 (30)   ; 2328 (0)                  ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 931 (30)     ; 1018 (0)          ; 1310 (0)         ; 0          ; |DE10_LITE_Default                         ; DE10_LITE_Default ; work         ;
 ;    |Chattering:Chattering1| ; 17 (17)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 16 (16)          ; 0          ; |DE10_LITE_Default|Chattering:Chattering1  ; Chattering        ; work         ;
 ;    |ClkGen:CG0|             ; 76 (76)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 43 (43)      ; 0 (0)             ; 33 (33)          ; 0          ; |DE10_LITE_Default|ClkGen:CG0              ; ClkGen            ; work         ;
-;    |MIPSnp:MIPSnp0|         ; 3041 (225)  ; 2240 (32)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 801 (192)    ; 1013 (0)          ; 1227 (55)        ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0          ; MIPSnp            ; work         ;
-;       |ALU:ALUi|            ; 72 (72)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (72)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|ALU:ALUi ; ALU               ; work         ;
-;       |DM:DMi|              ; 2446 (2446) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 398 (398)    ; 998 (998)         ; 1050 (1050)      ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|DM:DMi   ; DM                ; work         ;
+;    |MIPSnp:MIPSnp0|         ; 3039 (221)  ; 2240 (32)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 799 (189)    ; 1015 (0)          ; 1225 (54)        ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0          ; MIPSnp            ; work         ;
+;       |ALU:ALUi|            ; 72 (72)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 71 (71)      ; 0 (0)             ; 1 (1)            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|ALU:ALUi ; ALU               ; work         ;
+;       |DM:DMi|              ; 2447 (2447) ; 2048 (2048)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 399 (399)    ; 1000 (1000)       ; 1048 (1048)      ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|DM:DMi   ; DM                ; work         ;
 ;       |IM:IMi|              ; 22 (22)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|IM:IMi   ; IM                ; work         ;
 ;       |MP:MPi|              ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|MP:MPi   ; MP                ; work         ;
-;       |RF:RFi|              ; 287 (287)   ; 160 (160)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 107 (107)    ; 15 (15)           ; 165 (165)        ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi   ; RF                ; work         ;
+;       |RF:RFi|              ; 286 (286)   ; 160 (160)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 108 (108)    ; 15 (15)           ; 163 (163)        ; 0          ; |DE10_LITE_Default|MIPSnp:MIPSnp0|RF:RFi   ; RF                ; work         ;
 ;    |Reset_Delay:RD0|        ; 28 (28)     ; 21 (21)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 1 (1)             ; 20 (20)          ; 0          ; |DE10_LITE_Default|Reset_Delay:RD0         ; Reset_Delay       ; work         ;
 ;    |SegmentDecoder:HSD0|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD0     ; SegmentDecoder    ; work         ;
 ;    |SegmentDecoder:HSD1|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD1     ; SegmentDecoder    ; work         ;
@@ -1267,6 +1267,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |SegmentDecoder:HSD4|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD4     ; SegmentDecoder    ; work         ;
 ;    |SegmentDecoder:HSD5|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|SegmentDecoder:HSD5     ; SegmentDecoder    ; work         ;
 ;    |TogleFF:KEY1SW|         ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0          ; |DE10_LITE_Default|TogleFF:KEY1SW          ; TogleFF           ; work         ;
+;    |UpDownCounter:UDC1|     ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC1      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC2|     ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC2      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC3|     ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC3      ; UpDownCounter     ; work         ;
+;    |UpDownCounter:UDC4|     ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0          ; |DE10_LITE_Default|UpDownCounter:UDC4      ; UpDownCounter     ; work         ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1450,227 +1454,177 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[35]        ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[9]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[7]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[8]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; KEY[1]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; KEY[0]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[5]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[8]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; KEY[0]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[5]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; SW[4]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; SW[3]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[3]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; SW[2]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[0]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[1]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; SW[6]           ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; SW[0]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[1]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; SW[6]           ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; MAX10_CLK1_50   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; KEY[1]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                            ;
-+---------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                         ; Pad To Core Index ; Setting ;
-+---------------------------------------------+-------------------+---------+
-; ADC_CLK_10                                  ;                   ;         ;
-; MAX10_CLK2_50                               ;                   ;         ;
-; GSENSOR_INT[1]                              ;                   ;         ;
-; GSENSOR_INT[2]                              ;                   ;         ;
-; DRAM_DQ[0]                                  ;                   ;         ;
-; DRAM_DQ[1]                                  ;                   ;         ;
-; DRAM_DQ[2]                                  ;                   ;         ;
-; DRAM_DQ[3]                                  ;                   ;         ;
-; DRAM_DQ[4]                                  ;                   ;         ;
-; DRAM_DQ[5]                                  ;                   ;         ;
-; DRAM_DQ[6]                                  ;                   ;         ;
-; DRAM_DQ[7]                                  ;                   ;         ;
-; DRAM_DQ[8]                                  ;                   ;         ;
-; DRAM_DQ[9]                                  ;                   ;         ;
-; DRAM_DQ[10]                                 ;                   ;         ;
-; DRAM_DQ[11]                                 ;                   ;         ;
-; DRAM_DQ[12]                                 ;                   ;         ;
-; DRAM_DQ[13]                                 ;                   ;         ;
-; DRAM_DQ[14]                                 ;                   ;         ;
-; DRAM_DQ[15]                                 ;                   ;         ;
-; GSENSOR_SDI                                 ;                   ;         ;
-; GSENSOR_SDO                                 ;                   ;         ;
-; ARDUINO_IO[0]                               ;                   ;         ;
-; ARDUINO_IO[1]                               ;                   ;         ;
-; ARDUINO_IO[2]                               ;                   ;         ;
-; ARDUINO_IO[3]                               ;                   ;         ;
-; ARDUINO_IO[4]                               ;                   ;         ;
-; ARDUINO_IO[5]                               ;                   ;         ;
-; ARDUINO_IO[6]                               ;                   ;         ;
-; ARDUINO_IO[7]                               ;                   ;         ;
-; ARDUINO_IO[8]                               ;                   ;         ;
-; ARDUINO_IO[9]                               ;                   ;         ;
-; ARDUINO_IO[10]                              ;                   ;         ;
-; ARDUINO_IO[11]                              ;                   ;         ;
-; ARDUINO_IO[12]                              ;                   ;         ;
-; ARDUINO_IO[13]                              ;                   ;         ;
-; ARDUINO_IO[14]                              ;                   ;         ;
-; ARDUINO_IO[15]                              ;                   ;         ;
-; ARDUINO_RESET_N                             ;                   ;         ;
-; GPIO[0]                                     ;                   ;         ;
-; GPIO[1]                                     ;                   ;         ;
-; GPIO[2]                                     ;                   ;         ;
-; GPIO[3]                                     ;                   ;         ;
-; GPIO[4]                                     ;                   ;         ;
-; GPIO[5]                                     ;                   ;         ;
-; GPIO[6]                                     ;                   ;         ;
-; GPIO[7]                                     ;                   ;         ;
-; GPIO[8]                                     ;                   ;         ;
-; GPIO[9]                                     ;                   ;         ;
-; GPIO[10]                                    ;                   ;         ;
-; GPIO[11]                                    ;                   ;         ;
-; GPIO[12]                                    ;                   ;         ;
-; GPIO[13]                                    ;                   ;         ;
-; GPIO[14]                                    ;                   ;         ;
-; GPIO[15]                                    ;                   ;         ;
-; GPIO[16]                                    ;                   ;         ;
-; GPIO[17]                                    ;                   ;         ;
-; GPIO[18]                                    ;                   ;         ;
-; GPIO[19]                                    ;                   ;         ;
-; GPIO[20]                                    ;                   ;         ;
-; GPIO[21]                                    ;                   ;         ;
-; GPIO[22]                                    ;                   ;         ;
-; GPIO[23]                                    ;                   ;         ;
-; GPIO[24]                                    ;                   ;         ;
-; GPIO[25]                                    ;                   ;         ;
-; GPIO[26]                                    ;                   ;         ;
-; GPIO[27]                                    ;                   ;         ;
-; GPIO[28]                                    ;                   ;         ;
-; GPIO[29]                                    ;                   ;         ;
-; GPIO[30]                                    ;                   ;         ;
-; GPIO[31]                                    ;                   ;         ;
-; GPIO[32]                                    ;                   ;         ;
-; GPIO[33]                                    ;                   ;         ;
-; GPIO[34]                                    ;                   ;         ;
-; GPIO[35]                                    ;                   ;         ;
-; SW[9]                                       ;                   ;         ;
-;      - Mux15~0                              ; 0                 ; 6       ;
-;      - Mux14~0                              ; 0                 ; 6       ;
-;      - Mux13~0                              ; 0                 ; 6       ;
-;      - Mux12~0                              ; 0                 ; 6       ;
-;      - Mux11~0                              ; 0                 ; 6       ;
-;      - Mux10~0                              ; 0                 ; 6       ;
-;      - Mux9~0                               ; 0                 ; 6       ;
-;      - Mux8~0                               ; 0                 ; 6       ;
-;      - Mux7~0                               ; 0                 ; 6       ;
-;      - Mux6~0                               ; 0                 ; 6       ;
-;      - Mux5~0                               ; 0                 ; 6       ;
-;      - Mux4~0                               ; 0                 ; 6       ;
-;      - Mux3~0                               ; 0                 ; 6       ;
-;      - Mux2~0                               ; 0                 ; 6       ;
-;      - Mux1~0                               ; 0                 ; 6       ;
-;      - Mux0~0                               ; 0                 ; 6       ;
-;      - Mux12~2                              ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~0       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~1       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~4       ; 0                 ; 6       ;
-; SW[7]                                       ;                   ;         ;
-;      - Mux15~0                              ; 0                 ; 6       ;
-;      - Mux14~0                              ; 0                 ; 6       ;
-;      - Mux13~0                              ; 0                 ; 6       ;
-;      - Mux12~0                              ; 0                 ; 6       ;
-;      - Mux11~0                              ; 0                 ; 6       ;
-;      - Mux10~0                              ; 0                 ; 6       ;
-;      - Mux9~0                               ; 0                 ; 6       ;
-;      - Mux8~0                               ; 0                 ; 6       ;
-;      - Mux7~0                               ; 0                 ; 6       ;
-;      - Mux6~0                               ; 0                 ; 6       ;
-;      - Mux5~0                               ; 0                 ; 6       ;
-;      - Mux4~0                               ; 0                 ; 6       ;
-;      - Mux3~0                               ; 0                 ; 6       ;
-;      - Mux2~0                               ; 0                 ; 6       ;
-;      - Mux1~0                               ; 0                 ; 6       ;
-;      - Mux0~0                               ; 0                 ; 6       ;
-;      - Mux12~1                              ; 0                 ; 6       ;
-;      - Mux12~2                              ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux0~0                ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux35~0               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux36~0               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux45~0               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux46~0               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux47~0               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~1       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~5       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux513~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux514~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux515~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux516~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux517~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux518~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux519~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux520~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux521~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux522~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux523~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux524~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux525~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux526~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~2       ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux39~2               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux40~2               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux41~2               ; 0                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux44~2               ; 0                 ; 6       ;
-; SW[8]                                       ;                   ;         ;
-;      - Mux15~0                              ; 1                 ; 6       ;
-;      - Mux14~0                              ; 1                 ; 6       ;
-;      - Mux13~0                              ; 1                 ; 6       ;
-;      - Mux12~0                              ; 1                 ; 6       ;
-;      - Mux11~0                              ; 1                 ; 6       ;
-;      - Mux10~0                              ; 1                 ; 6       ;
-;      - Mux9~0                               ; 1                 ; 6       ;
-;      - Mux8~0                               ; 1                 ; 6       ;
-;      - Mux7~0                               ; 1                 ; 6       ;
-;      - Mux6~0                               ; 1                 ; 6       ;
-;      - Mux5~0                               ; 1                 ; 6       ;
-;      - Mux4~0                               ; 1                 ; 6       ;
-;      - Mux3~0                               ; 1                 ; 6       ;
-;      - Mux2~0                               ; 1                 ; 6       ;
-;      - Mux1~0                               ; 1                 ; 6       ;
-;      - Mux0~0                               ; 1                 ; 6       ;
-;      - Mux12~1                              ; 1                 ; 6       ;
-;      - Mux12~2                              ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux0~0                ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux35~0               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux36~0               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux45~0               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux46~0               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux47~0               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~0       ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~1       ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~4       ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux39~2               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux40~2               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux41~2               ; 1                 ; 6       ;
-;      - MIPSnp:MIPSnp0|Mux44~2               ; 1                 ; 6       ;
-; KEY[1]                                      ;                   ;         ;
-;      - LEDR[8]~output                       ; 0                 ; 6       ;
-;      - Chattering:Chattering1|sw_out~feeder ; 0                 ; 6       ;
-; KEY[0]                                      ;                   ;         ;
-;      - reset                                ; 1                 ; 6       ;
-; SW[5]                                       ;                   ;         ;
-;      - process_0~0                          ; 1                 ; 6       ;
-;      - clk~0                                ; 1                 ; 6       ;
-; SW[4]                                       ;                   ;         ;
-;      - process_0~0                          ; 1                 ; 6       ;
-;      - clk~0                                ; 1                 ; 6       ;
-; SW[3]                                       ;                   ;         ;
-;      - process_0~1                          ; 0                 ; 6       ;
-;      - clk~0                                ; 0                 ; 6       ;
-; SW[2]                                       ;                   ;         ;
-;      - process_0~1                          ; 0                 ; 6       ;
-;      - clk~0                                ; 0                 ; 6       ;
-; SW[0]                                       ;                   ;         ;
-;      - process_0~2                          ; 0                 ; 6       ;
-;      - clk~1                                ; 0                 ; 6       ;
-; SW[1]                                       ;                   ;         ;
-;      - process_0~2                          ; 0                 ; 6       ;
-;      - clk~1                                ; 0                 ; 6       ;
-; SW[6]                                       ;                   ;         ;
-;      - clk                                  ; 0                 ; 6       ;
-; MAX10_CLK1_50                               ;                   ;         ;
-;      - Chattering:Chattering1|counter[15]   ; 0                 ; 0       ;
-+---------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                      ;
++---------------------------------------+-------------------+---------+
+; Source Pin / Fanout                   ; Pad To Core Index ; Setting ;
++---------------------------------------+-------------------+---------+
+; ADC_CLK_10                            ;                   ;         ;
+; MAX10_CLK2_50                         ;                   ;         ;
+; GSENSOR_INT[1]                        ;                   ;         ;
+; GSENSOR_INT[2]                        ;                   ;         ;
+; DRAM_DQ[0]                            ;                   ;         ;
+; DRAM_DQ[1]                            ;                   ;         ;
+; DRAM_DQ[2]                            ;                   ;         ;
+; DRAM_DQ[3]                            ;                   ;         ;
+; DRAM_DQ[4]                            ;                   ;         ;
+; DRAM_DQ[5]                            ;                   ;         ;
+; DRAM_DQ[6]                            ;                   ;         ;
+; DRAM_DQ[7]                            ;                   ;         ;
+; DRAM_DQ[8]                            ;                   ;         ;
+; DRAM_DQ[9]                            ;                   ;         ;
+; DRAM_DQ[10]                           ;                   ;         ;
+; DRAM_DQ[11]                           ;                   ;         ;
+; DRAM_DQ[12]                           ;                   ;         ;
+; DRAM_DQ[13]                           ;                   ;         ;
+; DRAM_DQ[14]                           ;                   ;         ;
+; DRAM_DQ[15]                           ;                   ;         ;
+; GSENSOR_SDI                           ;                   ;         ;
+; GSENSOR_SDO                           ;                   ;         ;
+; ARDUINO_IO[0]                         ;                   ;         ;
+; ARDUINO_IO[1]                         ;                   ;         ;
+; ARDUINO_IO[2]                         ;                   ;         ;
+; ARDUINO_IO[3]                         ;                   ;         ;
+; ARDUINO_IO[4]                         ;                   ;         ;
+; ARDUINO_IO[5]                         ;                   ;         ;
+; ARDUINO_IO[6]                         ;                   ;         ;
+; ARDUINO_IO[7]                         ;                   ;         ;
+; ARDUINO_IO[8]                         ;                   ;         ;
+; ARDUINO_IO[9]                         ;                   ;         ;
+; ARDUINO_IO[10]                        ;                   ;         ;
+; ARDUINO_IO[11]                        ;                   ;         ;
+; ARDUINO_IO[12]                        ;                   ;         ;
+; ARDUINO_IO[13]                        ;                   ;         ;
+; ARDUINO_IO[14]                        ;                   ;         ;
+; ARDUINO_IO[15]                        ;                   ;         ;
+; ARDUINO_RESET_N                       ;                   ;         ;
+; GPIO[0]                               ;                   ;         ;
+; GPIO[1]                               ;                   ;         ;
+; GPIO[2]                               ;                   ;         ;
+; GPIO[3]                               ;                   ;         ;
+; GPIO[4]                               ;                   ;         ;
+; GPIO[5]                               ;                   ;         ;
+; GPIO[6]                               ;                   ;         ;
+; GPIO[7]                               ;                   ;         ;
+; GPIO[8]                               ;                   ;         ;
+; GPIO[9]                               ;                   ;         ;
+; GPIO[10]                              ;                   ;         ;
+; GPIO[11]                              ;                   ;         ;
+; GPIO[12]                              ;                   ;         ;
+; GPIO[13]                              ;                   ;         ;
+; GPIO[14]                              ;                   ;         ;
+; GPIO[15]                              ;                   ;         ;
+; GPIO[16]                              ;                   ;         ;
+; GPIO[17]                              ;                   ;         ;
+; GPIO[18]                              ;                   ;         ;
+; GPIO[19]                              ;                   ;         ;
+; GPIO[20]                              ;                   ;         ;
+; GPIO[21]                              ;                   ;         ;
+; GPIO[22]                              ;                   ;         ;
+; GPIO[23]                              ;                   ;         ;
+; GPIO[24]                              ;                   ;         ;
+; GPIO[25]                              ;                   ;         ;
+; GPIO[26]                              ;                   ;         ;
+; GPIO[27]                              ;                   ;         ;
+; GPIO[28]                              ;                   ;         ;
+; GPIO[29]                              ;                   ;         ;
+; GPIO[30]                              ;                   ;         ;
+; GPIO[31]                              ;                   ;         ;
+; GPIO[32]                              ;                   ;         ;
+; GPIO[33]                              ;                   ;         ;
+; GPIO[34]                              ;                   ;         ;
+; GPIO[35]                              ;                   ;         ;
+; SW[9]                                 ;                   ;         ;
+;      - Mux12~0                        ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~0 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~1 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~2 ; 0                 ; 6       ;
+; SW[7]                                 ;                   ;         ;
+;      - Mux12~0                        ; 0                 ; 6       ;
+;      - Mux12~2                        ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux0~0          ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux35~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux36~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux45~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux46~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux47~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~1 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux448~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux513~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux514~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux515~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux516~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux517~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux518~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux519~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux520~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux521~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux522~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux523~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux524~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux525~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux526~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~5 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux39~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux40~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux41~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux44~2         ; 0                 ; 6       ;
+; SW[8]                                 ;                   ;         ;
+;      - Mux12~0                        ; 0                 ; 6       ;
+;      - Mux12~2                        ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux0~0          ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux35~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux36~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux45~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux46~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux47~0         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~0 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~1 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|RF:RFi|Mux527~2 ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux39~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux40~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux41~2         ; 0                 ; 6       ;
+;      - MIPSnp:MIPSnp0|Mux44~2         ; 0                 ; 6       ;
+; KEY[0]                                ;                   ;         ;
+;      - reset                          ; 0                 ; 6       ;
+; SW[5]                                 ;                   ;         ;
+;      - process_0~0                    ; 0                 ; 6       ;
+;      - clk~0                          ; 0                 ; 6       ;
+; SW[4]                                 ;                   ;         ;
+;      - process_0~0                    ; 1                 ; 6       ;
+;      - clk~0                          ; 1                 ; 6       ;
+; SW[3]                                 ;                   ;         ;
+;      - process_0~1                    ; 1                 ; 6       ;
+;      - clk~0                          ; 1                 ; 6       ;
+; SW[2]                                 ;                   ;         ;
+;      - process_0~1                    ; 0                 ; 6       ;
+;      - clk~0                          ; 0                 ; 6       ;
+; SW[0]                                 ;                   ;         ;
+;      - process_0~2                    ; 1                 ; 6       ;
+;      - clk~1                          ; 1                 ; 6       ;
+; SW[1]                                 ;                   ;         ;
+;      - process_0~2                    ; 1                 ; 6       ;
+;      - clk~1                          ; 1                 ; 6       ;
+; SW[6]                                 ;                   ;         ;
+;      - clk                            ; 1                 ; 6       ;
+; MAX10_CLK1_50                         ;                   ;         ;
+; KEY[1]                                ;                   ;         ;
+;      - Chattering:Chattering1|sw_out  ; 1                 ; 6       ;
++---------------------------------------+-------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1678,87 +1632,89 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                  ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Chattering:Chattering1|counter[15]    ; FF_X34_Y1_N29      ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Chattering:Chattering1|sw_out         ; FF_X35_Y1_N7       ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; MAX10_CLK1_50                         ; PIN_P11            ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; MAX10_CLK1_50                         ; PIN_P11            ; 69      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3433 ; LCCOMB_X38_Y22_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3435 ; LCCOMB_X37_Y26_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3437 ; LCCOMB_X43_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3439 ; LCCOMB_X43_Y23_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3441 ; LCCOMB_X37_Y26_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3443 ; LCCOMB_X38_Y22_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3445 ; LCCOMB_X43_Y23_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3447 ; LCCOMB_X37_Y26_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3449 ; LCCOMB_X38_Y22_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3451 ; LCCOMB_X45_Y30_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3453 ; LCCOMB_X46_Y33_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3455 ; LCCOMB_X38_Y22_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3457 ; LCCOMB_X37_Y26_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3459 ; LCCOMB_X37_Y26_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3461 ; LCCOMB_X46_Y33_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3463 ; LCCOMB_X37_Y26_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3465 ; LCCOMB_X41_Y26_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3466 ; LCCOMB_X37_Y26_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3467 ; LCCOMB_X45_Y31_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3468 ; LCCOMB_X41_Y26_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3469 ; LCCOMB_X38_Y22_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3470 ; LCCOMB_X38_Y22_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3471 ; LCCOMB_X38_Y22_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3472 ; LCCOMB_X37_Y26_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3473 ; LCCOMB_X43_Y23_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3474 ; LCCOMB_X43_Y23_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3475 ; LCCOMB_X45_Y24_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3476 ; LCCOMB_X45_Y27_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3477 ; LCCOMB_X43_Y23_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3478 ; LCCOMB_X43_Y23_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3479 ; LCCOMB_X38_Y22_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3480 ; LCCOMB_X46_Y25_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3482 ; LCCOMB_X38_Y22_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3483 ; LCCOMB_X41_Y26_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3484 ; LCCOMB_X43_Y23_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3485 ; LCCOMB_X44_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3486 ; LCCOMB_X37_Y22_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3487 ; LCCOMB_X38_Y22_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3488 ; LCCOMB_X43_Y23_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3489 ; LCCOMB_X44_Y25_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3490 ; LCCOMB_X45_Y30_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3491 ; LCCOMB_X38_Y22_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3492 ; LCCOMB_X45_Y24_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3493 ; LCCOMB_X38_Y22_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3494 ; LCCOMB_X37_Y26_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3495 ; LCCOMB_X42_Y26_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3496 ; LCCOMB_X46_Y33_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3497 ; LCCOMB_X37_Y26_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3499 ; LCCOMB_X38_Y22_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3500 ; LCCOMB_X38_Y22_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3501 ; LCCOMB_X38_Y22_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3502 ; LCCOMB_X37_Y26_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3503 ; LCCOMB_X37_Y26_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3504 ; LCCOMB_X37_Y26_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3505 ; LCCOMB_X45_Y30_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3506 ; LCCOMB_X43_Y24_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3507 ; LCCOMB_X43_Y23_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3508 ; LCCOMB_X43_Y23_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3509 ; LCCOMB_X43_Y24_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3510 ; LCCOMB_X45_Y27_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3511 ; LCCOMB_X43_Y23_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3512 ; LCCOMB_X41_Y24_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3513 ; LCCOMB_X38_Y22_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3514 ; LCCOMB_X46_Y25_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|RF:RFi|r1[27]~1        ; LCCOMB_X56_Y33_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|RF:RFi|r29[31]~0       ; LCCOMB_X54_Y32_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|RF:RFi|r2[15]~1        ; LCCOMB_X54_Y32_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|RF:RFi|r31[31]~0       ; LCCOMB_X54_Y32_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|RF:RFi|r3[16]~0        ; LCCOMB_X56_Y33_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MIPSnp:MIPSnp0|pc[1]~0                ; LCCOMB_X50_Y32_N14 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Mux12~1                               ; LCCOMB_X59_Y37_N6  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; Mux12~2                               ; LCCOMB_X62_Y38_N20 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; Reset_Delay:RD0|Equal0~6              ; LCCOMB_X49_Y50_N8  ; 21      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; SW[6]                                 ; PIN_A13            ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; TogleFF:KEY1SW|tmp                    ; FF_X36_Y1_N1       ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk                                   ; LCCOMB_X54_Y50_N0  ; 2240    ; Clock        ; yes    ; Global Clock         ; GCLK12           ; --                        ;
-; reset                                 ; LCCOMB_X49_Y53_N8  ; 242     ; Async. clear ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; Chattering:Chattering1|counter[15]    ; FF_X50_Y9_N29      ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Chattering:Chattering1|sw_out         ; FF_X49_Y9_N3       ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; EN2                                   ; LCCOMB_X58_Y24_N22 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; EN3                                   ; LCCOMB_X59_Y25_N2  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; EN4                                   ; LCCOMB_X59_Y25_N12 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MAX10_CLK1_50                         ; PIN_P11            ; 68      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; MAX10_CLK1_50                         ; PIN_P11            ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3433 ; LCCOMB_X44_Y26_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3435 ; LCCOMB_X45_Y29_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3437 ; LCCOMB_X45_Y30_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3439 ; LCCOMB_X43_Y26_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3441 ; LCCOMB_X45_Y29_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3443 ; LCCOMB_X44_Y26_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3445 ; LCCOMB_X45_Y30_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3447 ; LCCOMB_X45_Y30_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3449 ; LCCOMB_X44_Y26_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3451 ; LCCOMB_X45_Y29_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3453 ; LCCOMB_X45_Y30_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3455 ; LCCOMB_X45_Y29_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3457 ; LCCOMB_X43_Y26_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3459 ; LCCOMB_X43_Y26_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3461 ; LCCOMB_X44_Y26_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3463 ; LCCOMB_X47_Y23_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3465 ; LCCOMB_X45_Y29_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3466 ; LCCOMB_X45_Y29_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3467 ; LCCOMB_X45_Y29_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3468 ; LCCOMB_X43_Y26_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3469 ; LCCOMB_X44_Y26_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3470 ; LCCOMB_X44_Y26_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3471 ; LCCOMB_X44_Y26_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3472 ; LCCOMB_X43_Y26_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3473 ; LCCOMB_X45_Y30_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3474 ; LCCOMB_X45_Y30_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3475 ; LCCOMB_X45_Y30_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3476 ; LCCOMB_X44_Y26_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3477 ; LCCOMB_X45_Y30_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3478 ; LCCOMB_X43_Y26_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3479 ; LCCOMB_X45_Y29_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3480 ; LCCOMB_X47_Y23_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3482 ; LCCOMB_X44_Y26_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3483 ; LCCOMB_X45_Y29_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3484 ; LCCOMB_X45_Y30_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3485 ; LCCOMB_X45_Y30_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3486 ; LCCOMB_X45_Y29_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3487 ; LCCOMB_X44_Y26_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3488 ; LCCOMB_X45_Y30_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3489 ; LCCOMB_X47_Y23_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3490 ; LCCOMB_X45_Y29_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3491 ; LCCOMB_X44_Y26_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3492 ; LCCOMB_X45_Y30_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3493 ; LCCOMB_X45_Y29_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3494 ; LCCOMB_X43_Y26_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3495 ; LCCOMB_X43_Y26_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3496 ; LCCOMB_X44_Y26_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3497 ; LCCOMB_X47_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3499 ; LCCOMB_X44_Y26_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3500 ; LCCOMB_X44_Y26_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3501 ; LCCOMB_X44_Y26_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3502 ; LCCOMB_X43_Y26_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3503 ; LCCOMB_X45_Y29_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3504 ; LCCOMB_X45_Y29_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3505 ; LCCOMB_X45_Y29_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3506 ; LCCOMB_X43_Y26_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3507 ; LCCOMB_X45_Y30_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3508 ; LCCOMB_X45_Y30_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3509 ; LCCOMB_X45_Y30_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3510 ; LCCOMB_X44_Y26_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3511 ; LCCOMB_X47_Y23_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3512 ; LCCOMB_X45_Y30_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3513 ; LCCOMB_X45_Y29_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|DM:DMi|DataMemory~3514 ; LCCOMB_X47_Y23_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|RF:RFi|r1[27]~1        ; LCCOMB_X54_Y20_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|RF:RFi|r29[23]~0       ; LCCOMB_X52_Y18_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|RF:RFi|r2[8]~1         ; LCCOMB_X52_Y18_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|RF:RFi|r31[0]~0        ; LCCOMB_X52_Y18_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|RF:RFi|r3[9]~0         ; LCCOMB_X54_Y20_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MIPSnp:MIPSnp0|pc[1]~0                ; LCCOMB_X51_Y19_N12 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Mux12~0                               ; LCCOMB_X58_Y23_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; Mux12~2                               ; LCCOMB_X59_Y25_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; Reset_Delay:RD0|Equal0~6              ; LCCOMB_X47_Y35_N20 ; 21      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; TogleFF:KEY1SW|tmp                    ; FF_X50_Y13_N19     ; 40      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk                                   ; LCCOMB_X40_Y3_N26  ; 2256    ; Clock        ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; reset                                 ; LCCOMB_X46_Y50_N16 ; 258     ; Async. clear ; yes    ; Global Clock         ; GCLK13           ; --                        ;
 +---------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1767,11 +1723,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name          ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; MAX10_CLK1_50 ; PIN_P11            ; 69      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; Mux12~1       ; LCCOMB_X59_Y37_N6  ; 16      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; Mux12~2       ; LCCOMB_X62_Y38_N20 ; 16      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; clk           ; LCCOMB_X54_Y50_N0  ; 2240    ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
-; reset         ; LCCOMB_X49_Y53_N8  ; 242     ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
+; MAX10_CLK1_50 ; PIN_P11            ; 68      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; Mux12~0       ; LCCOMB_X58_Y23_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; Mux12~2       ; LCCOMB_X59_Y25_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; clk           ; LCCOMB_X40_Y3_N26  ; 2256    ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
+; reset         ; LCCOMB_X46_Y50_N16 ; 258     ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
 +---------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1780,176 +1736,170 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 5,038 / 148,641 ( 3 % ) ;
-; C16 interconnects     ; 65 / 5,382 ( 1 % )      ;
-; C4 interconnects      ; 3,134 / 106,704 ( 3 % ) ;
-; Direct links          ; 402 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 4,841 / 148,641 ( 3 % ) ;
+; C16 interconnects     ; 95 / 5,382 ( 2 % )      ;
+; C4 interconnects      ; 3,253 / 106,704 ( 3 % ) ;
+; Direct links          ; 372 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 5 / 20 ( 25 % )         ;
-; Local interconnects   ; 1,257 / 49,760 ( 3 % )  ;
+; Local interconnects   ; 1,361 / 49,760 ( 3 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 89 / 5,406 ( 2 % )      ;
-; R4 interconnects      ; 3,546 / 147,764 ( 2 % ) ;
+; R24 interconnects     ; 78 / 5,406 ( 1 % )      ;
+; R4 interconnects      ; 3,645 / 147,764 ( 2 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.18) ; Number of LABs  (Total = 266) ;
+; Number of Logic Elements  (Average = 12.73) ; Number of LABs  (Total = 256) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 29                            ;
-; 2                                           ; 9                             ;
-; 3                                           ; 2                             ;
-; 4                                           ; 7                             ;
-; 5                                           ; 4                             ;
-; 6                                           ; 2                             ;
-; 7                                           ; 5                             ;
-; 8                                           ; 4                             ;
-; 9                                           ; 2                             ;
-; 10                                          ; 2                             ;
-; 11                                          ; 3                             ;
-; 12                                          ; 9                             ;
-; 13                                          ; 11                            ;
-; 14                                          ; 28                            ;
-; 15                                          ; 39                            ;
-; 16                                          ; 110                           ;
+; 1                                           ; 21                            ;
+; 2                                           ; 10                            ;
+; 3                                           ; 3                             ;
+; 4                                           ; 4                             ;
+; 5                                           ; 2                             ;
+; 6                                           ; 4                             ;
+; 7                                           ; 0                             ;
+; 8                                           ; 2                             ;
+; 9                                           ; 4                             ;
+; 10                                          ; 3                             ;
+; 11                                          ; 4                             ;
+; 12                                          ; 4                             ;
+; 13                                          ; 16                            ;
+; 14                                          ; 29                            ;
+; 15                                          ; 29                            ;
+; 16                                          ; 121                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.79) ; Number of LABs  (Total = 266) ;
+; LAB-wide Signals  (Average = 1.78) ; Number of LABs  (Total = 256) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 34                            ;
-; 1 Clock                            ; 225                           ;
-; 1 Clock enable                     ; 35                            ;
-; 2 Clock enables                    ; 180                           ;
-; 2 Clocks                           ; 1                             ;
+; 1 Async. clear                     ; 35                            ;
+; 1 Clock                            ; 215                           ;
+; 1 Clock enable                     ; 15                            ;
+; 2 Clock enables                    ; 188                           ;
+; 2 Clocks                           ; 3                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 18.30) ; Number of LABs  (Total = 266) ;
+; Number of Signals Sourced  (Average = 18.84) ; Number of LABs  (Total = 256) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 15                            ;
-; 2                                            ; 17                            ;
-; 3                                            ; 3                             ;
-; 4                                            ; 4                             ;
+; 1                                            ; 19                            ;
+; 2                                            ; 3                             ;
+; 3                                            ; 5                             ;
+; 4                                            ; 7                             ;
 ; 5                                            ; 3                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 6                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 0                             ;
-; 10                                           ; 4                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 6                             ;
-; 13                                           ; 2                             ;
-; 14                                           ; 3                             ;
-; 15                                           ; 4                             ;
-; 16                                           ; 16                            ;
-; 17                                           ; 8                             ;
-; 18                                           ; 5                             ;
-; 19                                           ; 7                             ;
-; 20                                           ; 10                            ;
-; 21                                           ; 12                            ;
-; 22                                           ; 11                            ;
-; 23                                           ; 16                            ;
-; 24                                           ; 24                            ;
-; 25                                           ; 27                            ;
-; 26                                           ; 23                            ;
+; 6                                            ; 1                             ;
+; 7                                            ; 2                             ;
+; 8                                            ; 2                             ;
+; 9                                            ; 1                             ;
+; 10                                           ; 5                             ;
+; 11                                           ; 0                             ;
+; 12                                           ; 1                             ;
+; 13                                           ; 3                             ;
+; 14                                           ; 2                             ;
+; 15                                           ; 9                             ;
+; 16                                           ; 12                            ;
+; 17                                           ; 5                             ;
+; 18                                           ; 14                            ;
+; 19                                           ; 8                             ;
+; 20                                           ; 13                            ;
+; 21                                           ; 13                            ;
+; 22                                           ; 12                            ;
+; 23                                           ; 18                            ;
+; 24                                           ; 21                            ;
+; 25                                           ; 22                            ;
+; 26                                           ; 26                            ;
 ; 27                                           ; 13                            ;
-; 28                                           ; 11                            ;
-; 29                                           ; 2                             ;
-; 30                                           ; 1                             ;
-; 31                                           ; 1                             ;
-; 32                                           ; 4                             ;
+; 28                                           ; 12                            ;
+; 29                                           ; 1                             ;
+; 30                                           ; 0                             ;
+; 31                                           ; 2                             ;
+; 32                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.33) ; Number of LABs  (Total = 266) ;
+; Number of Signals Sourced Out  (Average = 8.21) ; Number of LABs  (Total = 256) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 35                            ;
-; 2                                               ; 8                             ;
-; 3                                               ; 8                             ;
-; 4                                               ; 12                            ;
-; 5                                               ; 9                             ;
-; 6                                               ; 9                             ;
-; 7                                               ; 22                            ;
-; 8                                               ; 51                            ;
-; 9                                               ; 16                            ;
-; 10                                              ; 19                            ;
-; 11                                              ; 14                            ;
-; 12                                              ; 7                             ;
-; 13                                              ; 17                            ;
-; 14                                              ; 14                            ;
+; 1                                               ; 26                            ;
+; 2                                               ; 11                            ;
+; 3                                               ; 9                             ;
+; 4                                               ; 9                             ;
+; 5                                               ; 6                             ;
+; 6                                               ; 16                            ;
+; 7                                               ; 17                            ;
+; 8                                               ; 71                            ;
+; 9                                               ; 15                            ;
+; 10                                              ; 12                            ;
+; 11                                              ; 8                             ;
+; 12                                              ; 16                            ;
+; 13                                              ; 5                             ;
+; 14                                              ; 8                             ;
 ; 15                                              ; 8                             ;
-; 16                                              ; 9                             ;
+; 16                                              ; 6                             ;
 ; 17                                              ; 3                             ;
-; 18                                              ; 0                             ;
-; 19                                              ; 0                             ;
+; 18                                              ; 4                             ;
+; 19                                              ; 1                             ;
 ; 20                                              ; 1                             ;
-; 21                                              ; 0                             ;
-; 22                                              ; 0                             ;
-; 23                                              ; 0                             ;
-; 24                                              ; 0                             ;
-; 25                                              ; 2                             ;
-; 26                                              ; 0                             ;
-; 27                                              ; 0                             ;
-; 28                                              ; 1                             ;
-; 29                                              ; 1                             ;
+; 21                                              ; 2                             ;
+; 22                                              ; 1                             ;
+; 23                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 18.40) ; Number of LABs  (Total = 266) ;
+; Number of Distinct Inputs  (Average = 18.21) ; Number of LABs  (Total = 256) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
 ; 2                                            ; 10                            ;
-; 3                                            ; 10                            ;
-; 4                                            ; 10                            ;
-; 5                                            ; 1                             ;
-; 6                                            ; 7                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 6                             ;
-; 9                                            ; 1                             ;
-; 10                                           ; 8                             ;
-; 11                                           ; 3                             ;
-; 12                                           ; 8                             ;
-; 13                                           ; 24                            ;
-; 14                                           ; 5                             ;
-; 15                                           ; 6                             ;
+; 3                                            ; 6                             ;
+; 4                                            ; 9                             ;
+; 5                                            ; 5                             ;
+; 6                                            ; 5                             ;
+; 7                                            ; 2                             ;
+; 8                                            ; 3                             ;
+; 9                                            ; 2                             ;
+; 10                                           ; 2                             ;
+; 11                                           ; 6                             ;
+; 12                                           ; 9                             ;
+; 13                                           ; 32                            ;
+; 14                                           ; 4                             ;
+; 15                                           ; 5                             ;
 ; 16                                           ; 11                            ;
 ; 17                                           ; 8                             ;
 ; 18                                           ; 7                             ;
-; 19                                           ; 10                            ;
-; 20                                           ; 23                            ;
-; 21                                           ; 7                             ;
-; 22                                           ; 4                             ;
-; 23                                           ; 5                             ;
-; 24                                           ; 10                            ;
-; 25                                           ; 7                             ;
-; 26                                           ; 4                             ;
+; 19                                           ; 9                             ;
+; 20                                           ; 30                            ;
+; 21                                           ; 3                             ;
+; 22                                           ; 7                             ;
+; 23                                           ; 2                             ;
+; 24                                           ; 7                             ;
+; 25                                           ; 6                             ;
+; 26                                           ; 10                            ;
 ; 27                                           ; 9                             ;
-; 28                                           ; 3                             ;
-; 29                                           ; 12                            ;
-; 30                                           ; 8                             ;
-; 31                                           ; 6                             ;
-; 32                                           ; 8                             ;
-; 33                                           ; 11                            ;
-; 34                                           ; 4                             ;
+; 28                                           ; 5                             ;
+; 29                                           ; 7                             ;
+; 30                                           ; 5                             ;
+; 31                                           ; 10                            ;
+; 32                                           ; 4                             ;
+; 33                                           ; 8                             ;
+; 34                                           ; 1                             ;
 ; 35                                           ; 3                             ;
-; 36                                           ; 1                             ;
+; 36                                           ; 2                             ;
 ; 37                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
@@ -2189,7 +2139,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2199,6 +2148,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; MAX10_CLK1_50      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2253,10 +2203,9 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------+------------------------------------+-------------------+
 ; Source Register                    ; Destination Register               ; Delay Added in ns ;
 +------------------------------------+------------------------------------+-------------------+
-; Chattering:Chattering1|counter[15] ; Chattering:Chattering1|counter[15] ; 0.096             ;
-; Reset_Delay:RD0|Cont[19]           ; Reset_Delay:RD0|Cont[19]           ; 0.010             ;
+; Chattering:Chattering1|counter[15] ; Chattering:Chattering1|counter[15] ; 0.101             ;
 +------------------------------------+------------------------------------+-------------------+
-Note: This table only shows the top 2 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2294,19 +2243,17 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (335093): TimeQuest Timing Analyzer is analyzing 33 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Warning (335093): TimeQuest Timing Analyzer is analyzing 32 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'DE10_LITE_Default.sdc'
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register MIPSnp:MIPSnp0|pc[2] is being clocked by clk
+Warning (332060): Node: SW[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register MIPSnp:MIPSnp0|pc[2] is being clocked by SW[0]
 Warning (332060): Node: Chattering:Chattering1|sw_out was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register TogleFF:KEY1SW|tmp is being clocked by Chattering:Chattering1|sw_out
 Warning (332060): Node: Chattering:Chattering1|counter[15] was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register Chattering:Chattering1|sw_out is being clocked by Chattering:Chattering1|counter[15]
 Warning (332060): Node: SW[7] was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch MIPSnp:MIPSnp0|regD[1] is being clocked by SW[7]
-Warning (332060): Node: SW[6] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch clk is being clocked by SW[6]
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 3 clocks
@@ -2318,12 +2265,25 @@ Info (332111): Found 3 clocks
 Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node ClkGen:CG0|c File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 267
         Info (176357): Destination node Chattering:Chattering1|counter[15] File: C:/DE10_LITE_Default/Chattering.vhd Line: 26
 Info (176353): Automatically promoted node clk  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 117
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node Mux12~0  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node clk File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 117
-Info (176353): Automatically promoted node Mux12~1  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 189
+        Info (176357): Destination node Mux15~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux14~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux13~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux12~1 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux11~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux10~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux9~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux8~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux7~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176357): Destination node Mux6~0 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
+        Info (176358): Non-global destination nodes limited to 10 nodes
+Info (176353): Automatically promoted node Mux12~2  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 195
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node MIPSnp:MIPSnp0|Mux34~0 File: C:/DE10_LITE_Default/mipsnp.vhd Line: 186
@@ -2332,14 +2292,12 @@ Info (176353): Automatically promoted node Mux12~1  File: C:/DE10_LITE_Default/D
         Info (176357): Destination node MIPSnp:MIPSnp0|Mux38~0 File: C:/DE10_LITE_Default/mipsnp.vhd Line: 186
         Info (176357): Destination node MIPSnp:MIPSnp0|Mux42~0 File: C:/DE10_LITE_Default/mipsnp.vhd Line: 186
         Info (176357): Destination node MIPSnp:MIPSnp0|Mux43~0 File: C:/DE10_LITE_Default/mipsnp.vhd Line: 186
-Info (176353): Automatically promoted node Mux12~2  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 189
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node reset  File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 117
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2348,17 +2306,17 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 28% of the available device resources in the region that extends from location X45_Y22 to location X55_Y32
+    Info (170196): Router estimated peak interconnect usage is 26% of the available device resources in the region that extends from location X45_Y22 to location X55_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.51 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.43 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
 Warning (169177): 88 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 11
     Info (169178): Pin MAX10_CLK2_50 uses I/O standard 3.3-V LVTTL at N14 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 13
@@ -2438,7 +2396,6 @@ Warning (169177): 88 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
     Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
     Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
-    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 34
     Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 34
     Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
     Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
@@ -2448,6 +2405,7 @@ Warning (169177): 88 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
     Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 38
     Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 12
+    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 34
 Warning (169064): Following 71 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 21
     Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 21
@@ -2521,11 +2479,11 @@ Warning (169064): Following 71 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[34] has a permanently disabled output enable File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 55
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: C:/DE10_LITE_Default/DE10_LITE_Default.vhd Line: 55
 Info (144001): Generated suppressed messages file C:/DE10_LITE_Default/DE10_LITE_Default.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 5684 megabytes
-    Info: Processing ended: Fri Jul 03 16:05:04 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 5690 megabytes
+    Info: Processing ended: Fri Jul 17 15:01:18 2020
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:38
 
 
 +----------------------------+
